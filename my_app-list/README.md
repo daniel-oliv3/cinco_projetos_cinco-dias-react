@@ -19,4 +19,8 @@ CSS como componentes
 ### npm install styled-components
 
 Types Styled
-### npm install –D @types/styled-components
+### npm install -D @types/styled-components
+
+### npm install --save-dev typescript
+
+### npm install --save react-router-dom
