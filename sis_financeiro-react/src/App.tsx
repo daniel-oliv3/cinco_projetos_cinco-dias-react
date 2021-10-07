@@ -24,7 +24,7 @@ const App = () => {
       </C.Header>
       <C.Body>
 
-        {/* Área de informações */}
+        <InfoArea />
 
         {/* Área de inserção */}
 
