@@ -29,5 +29,8 @@ export const formatDate = (date: Date): string => {
     let month = date.getMonth() + 1;
     let day = date.getDate();
 
-    return `${day}/${month}/${year}`;
+    return `${addZeroToDate(day)}/${addZeroToDate(month)}/${year}`;
 }
+
+/*Função para adicionar um 0 a esquerda, padrao BR*/
+const addZeroToDate = (n: number): string => n < 10 ? `0${n}` : `${n}`;
