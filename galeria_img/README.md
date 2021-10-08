@@ -21,6 +21,8 @@ CSS como componentes
 Types Styled
 ### npm install -D @types/styled-components
 
+### npm install -D typescript@3.3.3
+
 ### npm install uuid
 
 ### npm install firebase
