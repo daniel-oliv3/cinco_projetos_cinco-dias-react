@@ -21,4 +21,6 @@ CSS como componentes
 Types Styled
 ### npm install -D @types/styled-components
 
-### npm install --save react-router-dom
+### npm install uuid
+
+### npm install firebase
