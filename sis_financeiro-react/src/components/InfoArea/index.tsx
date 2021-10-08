@@ -4,9 +4,11 @@ import { formatCurrentMonth } from '../../helpers/dateFilter';
 type Props = {
     currentMonth: string;
     onMonthChange: (newMonth: string) => void;
+    income: number;
+    expense: number;
 }
 
-export const InfoArea = ({ currentMonth, onMonthChange }: Props) => {
+export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props) => {
     const handlePrevMonth = () =>{
         let [year, month] = currentMonth.split('-');
         let currentDate = new Date(parseInt(year), parseInt(month) -1, 1);
