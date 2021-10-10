@@ -1,6 +1,7 @@
 import { Photo } from '../types/Photo';
 import { storage } from '../libs/firebase';
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
+import { async } from '@firebase/util';
 
 export const getAll = async () => {
     let list: Photo[] = [];
@@ -18,4 +19,12 @@ export const getAll = async () => {
     }
 
     return list;
+}
+
+export const insert = async (file: File) => {
+    if(['image/jpeg', 'image/jpg', 'image/png',].includes(file.type)){
+
+    }else{
+        return new Error('Tipo de arquivo não permitido!');
+    }
 }
